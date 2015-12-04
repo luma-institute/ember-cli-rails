@@ -3,6 +3,8 @@ module EmberCli
     def index
       @app = params[:ember_app]
 
+      EmberCli[@app].build
+
       render layout: false
     end
   end
